@@ -10,7 +10,7 @@ from flask import Flask, request, jsonify, render_template_string, session, redi
 # ═══════════════════════════════════════════════════════════════
 #   SETTINGS
 # ═══════════════════════════════════════════════════════════════
-API_KEY    = os.environ.get("GEMINI_API_KEY", "AIzaSyA6z8j34tTv1b_4vhba9rqaoAxKcj1n0XE")
+API_KEY = os.environ.get("GEMINI_API_KEY")
 PORT       = int(os.environ.get("PORT", 5000))
 SECRET_KEY = os.environ.get("SECRET_KEY", "classsnap-secret-xyz")
 # ═══════════════════════════════════════════════════════════════
