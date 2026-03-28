@@ -18,7 +18,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "classsnap-secret-xyz")
 ALLOWED_EXTENSIONS = {"jpg", "jpeg", "png", "webp", "bmp", "gif", "tiff"}
 
 genai.configure(api_key=API_KEY)
-model = genai.GenerativeModel("gemini-1.5-flash")
+model = genai.GenerativeModel("models/gemini-flash-latest")
 
 # In-memory store of all extracted results (for dashboard display)
 extracted_results = []
